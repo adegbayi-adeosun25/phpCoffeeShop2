@@ -1,0 +1,56 @@
+section {
+    border-bottom: 1px solid #ccc;
+    margin-top: 1em;
+}
+
+section .col-md-3 {
+    border-left: 1px solid #ccc;
+}
+
+section .col-md-3:first-child {
+    border: none;
+}
+
+
+body {
+    background: rgb(41, 36, 38);
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(77, 78, 76)
+}
+h1 {
+    font-weight: normal;
+    line-height: 1.1;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #fff;
+}
+.container {
+    width: 850px;
+    margin: 20px auto;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.sitemap {
+    width: 692px;
+    margin: 50px auto;
+}
+
+
+li a {
+    background: rgb(180, 181, 180);
+    width: 150px;
+    height: 70px;
+    line-height: 70px;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+

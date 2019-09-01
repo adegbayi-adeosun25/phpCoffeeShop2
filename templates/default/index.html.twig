@@ -1,0 +1,218 @@
+
+
+{% extends 'base.html.twig' %}
+
+
+{% block title %} {% endblock %}
+{% block body %}
+
+
+
+    <html lang="en">
+<head>
+    <title>Welcome </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<style>
+
+    * {
+
+    }
+    html, body {
+        background: url(https://www.perfectdailygrind.com/wp-content/uploads/2019/03/interior-of-a-coffee-shop.jpg);
+
+        height: 100%;
+        text-align: center;
+    }
+
+    body {
+
+
+    }
+    h2, a, p, *:before,h1, span, input {
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 300;
+    }
+    h1 {
+        color: #fefefe;
+        margin-bottom: 1.5em;
+    }
+
+    h2 {
+        color: #2980b9;
+        margin-bottom: 1em;
+        margin-top: 0;
+        font-size: 20px;
+        background-color: white;
+        /*width: 100px;*/
+        text-align: center;
+        padding: 16px;
+        z-index: 15;
+        border-radius: 4px;
+
+        transition: all 2s ease-out;
+    }
+
+    p {
+        display: block;
+        width: 100%;
+        color: #2c3e50;
+        clear: both;
+    }
+    .description {
+        margin-bottom: 70px;
+    }
+
+    button {
+        border: 0;
+        background-color: #3498db;
+        color: white;
+        border-radius: 4px;
+        padding: 0.7em 1.5em;
+        font-size: 1em;
+        transition: background-color 0.2s ease-out;
+        margin: 0;
+
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+    button:active, button:hover {
+        outline: none;
+    }
+
+    .wrapper {
+        border: 1px dashed #95a5a6;
+        height: 56px;
+        margin-top: 16px;
+        border-radius: 4px;
+        position: relative;
+        font-size: 12px;
+    }
+
+    .wrapper p {
+        line-height: 31px;
+    }
+    #form {
+        width: 300px;
+        margin: 0 auto;
+    }
+    input {
+        border: 1px solid #CCC;
+        font-size: 1em;
+        height: 40px;
+        border-radius: 4px;
+        width: 100%;
+        transition: border 0.2s ease-out;
+        padding: 0 0.75em;
+        display: block;
+        margin: 0 auto 0.5em;
+        -webkit-appearance: none;
+    }
+    span {
+        font-size: 1em;
+    }
+    ul {
+        color: #fff;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    input:hover {
+        border: 1px solid #9B9B9B;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    #url {
+        position: relative;
+        width: 100%;
+    }
+
+    #url span {
+        position: absolute;
+        left: 1em;
+        top: 0;
+        height: 100%;
+        line-height: 40px;
+        color: rgba(0, 0, 0, 0.3);
+        user-select: none;
+    }
+
+    #username {
+        text-indent: 120px;
+        margin-bottom: 1em;
+    }
+
+    ::-webkit-input-placeholder {
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+    :-moz-placeholder {
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+    ::-moz-placeholder {
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+    :-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+
+</style>
+</head>
+<body>
+
+
+
+
+
+<h1>Review Home Page</h1>
+
+<br>
+
+
+
+<br>
+<p></p>
+<br>
+
+<br>
+
+
+<div ng-app="">
+
+
+
+</div>
+
+<div id="form">
+    <input type="text" id="searchBox"
+           class="search-field" autoFocus />
+    <ul id="searchResults" class="term-list hidden"></ul>
+</div>
+
+<button>Search</button>
+</div>
+
+
+
+</div>
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
+
+
+{% endblock %}

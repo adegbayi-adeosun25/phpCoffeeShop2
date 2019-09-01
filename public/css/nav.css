@@ -1,0 +1,15 @@
+nav {
+    background-color: black;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 2%;
+    width: 100%;
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    text-decoration-color: white;
+}

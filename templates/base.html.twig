@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta charset="UTF-8">
+
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <style>
+        @import '/css/nav.css';
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-bg mb-5">
+    <div class="container">
+        <a style="margin-left: 75px;" class="navbar-brand space-brand" href="#">
+            Shop Coffee Online Review of Ireland
+        </a>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a style="color: #fff;" class="nav-link" href="{{ url('home') }}">
+                    Home
+                </a>
+            </li>
+
+            {% if is_granted('ROLE_ADMIN') %}
+                <li class="nav-item">
+                    <a style="color: #fff;" class="nav-link" href="{{ url('index_admin') }}">
+                        Admin
+                    </a>
+                </li>
+            {% endif %}
+
+
+
+            <li class="nav-item">
+                <a style="color: #fff;" class="nav-link" href="{{ url('about_new') }}">
+                    About
+                </a>
+            </li>
+
+
+            <li class="nav-item">
+                <a style="color: #fff;" class="nav-link" href="{{ url('user_index') }}">
+                    Owners&Staff
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a style="color: #fff;" class="nav-link" href="{{ url('shops_index') }}">
+                    Coffee Shops
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a style="color: #fff;" class="nav-link" href="{{ url('reviews_index') }}">
+                    Reviews
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a style="color: #fff;" class="nav-link" href="{{ url('comments_index') }}">
+                    Comments
+                </a>
+            </li>
+
+
+
+        </ul>
+
+
+
+
+        <ul class="nav navbar-nav " style="text-align: right;">
+
+            <li class="nav-link">
+                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                Username:
+                <strong>{{ app.user.username }}</strong>
+
+                <a style="color: #fff;" class="nav-link" href="{{ url('app_logout') }}">logout</a>
+                {% else %}
+            </li>
+            <li class="nav-link">
+                <a class="nav-link" href="{{ url('app_login') }}">login</a>
+            </li>
+            {% endif %}
+        </ul>
+
+
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+<div class="footer">
+    <p>Copyright@</p>
+    <div class="row" style="">
+        <div class="col-md-12 py-4" id="logo-container" >
+            <div class="mb-5 flex-center" style="margin:0px !important; margin-left:30px !important">
+                <a class="li-ic" href="https://www.linkedin.com/in/danmorandev/">
+                    <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <a class="li-ic" href="https://github.com/DanielMoran98">
+                    <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <a class="li-ic" href="mailto:danmoran.dev@gmail.com?subject=poll-y">
+                    <i class="fas fa-envelope fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+{% block body %}{% endblock %}
+{% block javascripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}admin hopme{% endblock %}
+
+{% block body %}
+<head>
+    <style>
+    body{
+    background-color: blanchedalmond;
+
+    }
+
+
+</style>
+
+</head>
+    <h1>Admin home</h1>
+
+
+    Logged in as Admin:
+    <a  class="nav-link" href="{{ url('index_admin') }}">
+        Admin
+    </a>
+
+
+
+
+
+{% endblock %}
