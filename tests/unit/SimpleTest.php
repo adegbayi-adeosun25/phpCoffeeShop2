@@ -15,5 +15,5 @@ class SimpleTest extends TestCase
 // Assert
         $this->assertEquals($expectedResult, $result);
     }
-
+    
 }
